@@ -1,0 +1,17 @@
+div {
+    display: flex;
+    gap: 1rem; // space between elements
+}
+
+
+  main {
+    background-color: slategray;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: inherit;
+    position: relative;
+  }

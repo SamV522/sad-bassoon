@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Bronze",
+    "metals": {
+      "tin": { "min": 8, "max": 12 },
+      "copper": { "min": 92, "max": 88 }
+    }
+  },
+  {
+    "name": "Brass",
+    "metals": {
+      "zinc": { "min": 30, "max": 40 },
+      "copper": { "min": 70, "max": 60 }
+    }
+  }
+]

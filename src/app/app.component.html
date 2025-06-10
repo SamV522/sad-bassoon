@@ -59,6 +59,7 @@
                     </tr>
                     <tr>
                         <td style="width: 50%;">
+                            <!-- Nuggets (5 units/per) -->
                             @for(metal of selectedAlloy!.metals | keyvalue; track metal.key)
                             {
                                 <li>
@@ -71,23 +72,19 @@
                                 </li>
                             }
                         </td>
-                        <td style="width: 50%;">
-                            <ul style="font-weight: bold; color: red;">
-                                @for(metal of selectedAlloy!.metals | keyvalue; track metal.key)
-                                {
-                                    <li>
-                                        {{
-                                            (
-                                                ceil(
-                                                    ( lerp(metal.value.min, metal.value.max, sliderValue/100) ) * numIngots * 100 / 5
-                                                ) * 5
-                                                -
-                                                ((lerp(metal.value.min, metal.value.max, sliderValue / 100)) * numIngots * 100)
-                                            ) | number:'1.2-2'
-                                        }} units of {{ metal.key }}
-                                    </li>
-                                }
-                            </ul>
+                        <td style="width: 50%; font-weight: bold; color: red;">
+                            <!-- Wastage-->
+                            @for(metal of selectedAlloy!.metals | keyvalue; track metal.key)
+                            {
+                                <li>
+                                    <!-- Wastage = total units-->
+                                    {{
+                                        (
+                                            (lerp(metal.value.min, metal.value.max, sliderValue/100) * numIngots) % 5
+                                        ) | number
+                                    }} units of {{ metal.key }}
+                                </li>
+                            }
                         </td>
                     </tr>
                 </table>

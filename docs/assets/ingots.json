@@ -1,6 +1,6 @@
 [
   {
-    "name": "Bronze",
+    "name": "Tin Bronze",
     "metals": {
       "tin": { "min": 8, "max": 12 },
       "copper": { "min": 92, "max": 88 }
@@ -11,6 +11,43 @@
     "metals": {
       "zinc": { "min": 30, "max": 40 },
       "copper": { "min": 70, "max": 60 }
+    }
+  },
+  {
+    "name": "Bismuth Bronze",
+    "metals": {
+      "bismuth": { "min": 20, "max": 10 },
+      "copper": { "min": 50, "max": 70 },
+      "zinc": { "min": 30, "max": 20 }
+    }
+  },
+  {
+    "name": "Black Bronze",
+    "metals": {
+      "silver": { "min": 16, "max": 8 },
+      "gold": { "min": 16, "max": 8 },
+      "copper": { "min": 68, "max": 84 }
+    }
+  },
+  {
+    "name": "Cupronickel",
+    "metals": {
+      "nickel": { "min": 35, "max": 25 },
+      "copper": { "min": 65, "max": 75 }
+    }
+  },
+  {
+    "name": "Electrum",
+    "metals": {
+      "gold": { "min": 60, "max": 40 },
+      "silver": { "min": 40, "max": 60 }
+    }
+  },
+  {
+    "name": "Molybdochalkos",
+    "metals": {
+      "lead": { "min": 92, "max": 88 },
+      "copper": { "min": 8, "max": 12 }
     }
   }
 ]
